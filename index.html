@@ -3,658 +3,367 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Rajan Shukla — Data Science, Analytics & AI</title>
-<meta name="description" content="Rajan Shukla — Data scientist and analytics researcher working at the intersection of statistics, machine learning, and AI." />
+<title>Rajan Shukla — Data Science, Analytics & Research</title>
+<meta name="description" content="Rajan Shukla — data scientist and researcher working across statistics, machine learning, causal inference, and data engineering." />
 
-<!-- Fonts: Fraunces (display serif) + JetBrains Mono (mono) + Inter Tight (body) -->
+<!-- Link preview (LinkedIn, iMessage, etc.) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rajan Shukla — Data Science, Analytics & Research" />
+<meta property="og:description" content="Data scientist and researcher: production pipelines, ML models, and published research on causal inference." />
+<meta property="og:url" content="https://rshukla17.github.io/" />
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/109152254?v=4" />
+<meta name="twitter:card" content="summary" />
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317233b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23ffffff' text-anchor='middle'%3ERS%3C/text%3E%3C/svg%3E" />
+
+<!-- Fonts: Instrument Serif (display) + Public Sans (body) + IBM Plex Mono (labels) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@300;400;500;600&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- ===== BACKGROUND LAYERS ===== -->
-<div class="cursor-glow" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
-<div class="grid-overlay" aria-hidden="true"></div>
-<div class="scatter-bg" aria-hidden="true">
-  <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
-    <g class="pts">
-      <circle cx="120" cy="140" r="3"/><circle cx="180" cy="220" r="2"/>
-      <circle cx="260" cy="160" r="4"/><circle cx="340" cy="300" r="3"/>
-      <circle cx="410" cy="180" r="2"/><circle cx="490" cy="260" r="5"/>
-      <circle cx="560" cy="120" r="3"/><circle cx="640" cy="340" r="2"/>
-      <circle cx="720" cy="220" r="4"/><circle cx="820" cy="180" r="3"/>
-      <circle cx="900" cy="280" r="2"/><circle cx="980" cy="160" r="5"/>
-      <circle cx="1080" cy="240" r="3"/><circle cx="150" cy="480" r="4"/>
-      <circle cx="240" cy="560" r="2"/><circle cx="320" cy="440" r="3"/>
-      <circle cx="410" cy="620" r="5"/><circle cx="510" cy="520" r="2"/>
-      <circle cx="610" cy="460" r="4"/><circle cx="700" cy="600" r="3"/>
-      <circle cx="810" cy="540" r="2"/><circle cx="900" cy="480" r="4"/>
-      <circle cx="1000" cy="620" r="3"/><circle cx="1100" cy="500" r="2"/>
-    </g>
-  </svg>
-</div>
+<a class="skip-link" href="#about">Skip to content</a>
 
-<!-- ===== TOP BAR ===== -->
-<header class="topbar">
-  <div class="topbar__inner">
-    <a href="#top" class="topbar__logo">
-      <span class="logo-mark">RS</span>
-      <span class="logo-divider"></span>
-      <span class="logo-meta">v2026 · Springfield, MO</span>
-    </a>
-    <nav class="topbar__nav" aria-label="Primary">
-      <a href="#about">01 / About</a>
-      <a href="#work">02 / Work</a>
-      <a href="#research">03 / Research</a>
-      <a href="#experience">04 / Experience</a>
-      <a href="#contact">05 / Contact</a>
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">Rajan&nbsp;<span>Shukla</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav__cta">Contact</a>
     </nav>
-    <a href="#contact" class="topbar__cta">
-      <span>Get in touch</span>
-      <span class="arrow">↗</span>
-    </a>
   </div>
 </header>
 
 <!-- ===== HERO ===== -->
 <section id="top" class="hero">
-  <div class="hero__meta">
-    <div class="meta-block">
-      <span class="meta-label">DISCIPLINE</span>
-      <span class="meta-value">Data Science · Analytics · AI</span>
-    </div>
-    <div class="meta-block">
-      <span class="meta-label">STATUS</span>
-      <span class="meta-value"><span class="dot"></span> Open to full-time roles</span>
-    </div>
-    <div class="meta-block">
-      <span class="meta-label">LATEST</span>
-      <span class="meta-value">NLP @ 98% on 11M+ msgs</span>
-    </div>
-  </div>
+  <div class="hero__inner">
 
-  <h1 class="hero__title">
-    <span class="hero__kicker"><span>— Rajan Shukla</span></span>
-    <span class="hero__line"><span>I turn <em>messy&nbsp;data</em> into</span></span>
-    <span class="hero__line"><span>decisions, models, and</span></span>
-    <span class="hero__line hero__line--accent"><span>intelligent&nbsp;systems.</span></span>
-  </h1>
-
-  <div class="hero__tail">
-    <p class="hero__lede">
-      Graduate researcher building at the seam of <strong>statistics, machine
-      learning, and AI</strong>. I ship NLP models to production, design
-      experiments that move revenue, and publish research on causal inference.
-      Sometimes all in the same week.
-    </p>
-    <div class="hero__actions">
-      <a href="#work" class="btn btn--primary">
-        View selected work <span>→</span>
-      </a>
-      <a href="#contact" class="btn btn--ghost">
-        Get in touch
-      </a>
+    <div class="hero__intro">
+      <p class="eyebrow">Data science · Analytics · Research</p>
+      <h1 class="hero__title">
+        Turning complex data into<br />
+        <em>clear decisions.</em>
+      </h1>
+      <p class="hero__lede">
+        I'm Rajan Shukla — a data scientist and researcher. I build production
+        data pipelines, ship machine-learning models, and publish research on
+        causal inference in financial and healthcare systems.
+      </p>
+      <div class="hero__actions">
+        <a href="#experience" class="btn btn--solid">See my work</a>
+        <a href="#contact" class="btn btn--line">Get in touch</a>
+      </div>
+      <ul class="hero__facts">
+        <li><strong>98%</strong><span>NLP routing accuracy on 11M+ messages</span></li>
+        <li><strong>$10M+</strong><span>YoY revenue tied to A/B tests I supported</span></li>
+        <li><strong>6</strong><span>research papers under review or in progress</span></li>
+      </ul>
     </div>
-  </div>
 
-  <!-- Decorative mini notebook -->
-  <aside class="nb" aria-hidden="true">
-    <div class="nb__bar">
-      <span class="nb__dot"></span>
-      <span class="nb__dot"></span>
-      <span class="nb__dot"></span>
-      <span class="nb__title">shukla_intro.ipynb — jupyter</span>
-      <span class="nb__kernel">Python 3 · ●</span>
-    </div>
-    <div class="nb__cell">
-      <div class="nb__prompt">In [<span>1</span>]:</div>
-      <pre class="nb__code"><span class="c-kw">from</span> rajan <span class="c-kw">import</span> work
-<span class="c-kw">import</span> pandas <span class="c-kw">as</span> pd
+    <div class="hero__side">
+      <figure class="portrait">
+        <!-- To use a different photo: replace the src below with e.g. "photo.jpg"
+             after adding that file to the repo root. -->
+        <img src="https://avatars.githubusercontent.com/u/109152254?v=4" alt="Portrait of Rajan Shukla" width="320" height="320" loading="eager" />
+        <figcaption>Rajan Shukla</figcaption>
+      </figure>
 
-profile = work.summarize(verbose=<span class="c-kw">True</span>)
-pd.DataFrame(profile).T</pre>
+      <!-- Signature: a small causal graph of how the work fits together -->
+      <svg class="dag" viewBox="0 0 340 210" role="img" aria-label="Causal graph: statistics leads to machine learning and data engineering, which lead to causal inference and decisions">
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+          </marker>
+        </defs>
+        <g class="dag__edges" fill="none" marker-end="url(#arr)">
+          <path d="M78,52 C120,30 160,30 198,44" />
+          <path d="M78,66 C120,92 150,110 188,128" />
+          <path d="M232,52 C262,64 278,92 284,118" />
+          <path d="M226,140 C244,142 260,140 272,134" />
+        </g>
+        <g class="dag__nodes">
+          <g class="node" style="--d:0s"><circle cx="52" cy="58" r="7"/><text x="52" y="84">statistics</text></g>
+          <g class="node" style="--d:.35s"><circle cx="216" cy="48" r="7"/><text x="216" y="30">machine learning</text></g>
+          <g class="node" style="--d:.55s"><circle cx="204" cy="136" r="7"/><text x="204" y="164">data engineering</text></g>
+          <g class="node node--accent" style="--d:.85s"><circle cx="290" cy="128" r="8"/><text x="284" y="104">decisions</text></g>
+        </g>
+      </svg>
     </div>
-    <div class="nb__cell nb__cell--out">
-      <div class="nb__prompt">Out[<span>1</span>]:</div>
-      <table class="nb__df">
-        <thead>
-          <tr><th></th><th>metric</th><th>value</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>0</td><td>model_accuracy</td><td>0.98</td></tr>
-          <tr><td>1</td><td>msgs_classified</td><td>11_000_000</td></tr>
-          <tr><td>2</td><td>revenue_lift_usd</td><td>10_000_000</td></tr>
-          <tr><td>3</td><td>perf_gain_pct</td><td>65</td></tr>
-          <tr><td>4</td><td>papers</td><td>5</td></tr>
-          <tr><td>5</td><td>comps_won</td><td>3</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </aside>
-</section>
 
-<!-- ===== MARQUEE ===== -->
-<section class="marquee" aria-hidden="true">
-  <div class="marquee__track">
-    <span>Machine Learning</span><i>✦</i>
-    <span>Natural Language Processing</span><i>✦</i>
-    <span>Causal Inference</span><i>✦</i>
-    <span>Bayesian Networks</span><i>✦</i>
-    <span>Deep Learning</span><i>✦</i>
-    <span>Experimentation</span><i>✦</i>
-    <span>Statistical Modeling</span><i>✦</i>
-    <span>Data Engineering</span><i>✦</i>
-    <span>Applied AI</span><i>✦</i>
-    <span>Machine Learning</span><i>✦</i>
-    <span>Natural Language Processing</span><i>✦</i>
-    <span>Causal Inference</span><i>✦</i>
-    <span>Bayesian Networks</span><i>✦</i>
-    <span>Deep Learning</span><i>✦</i>
-    <span>Experimentation</span><i>✦</i>
-    <span>Statistical Modeling</span><i>✦</i>
-    <span>Data Engineering</span><i>✦</i>
-    <span>Applied AI</span><i>✦</i>
   </div>
 </section>
 
 <!-- ===== ABOUT ===== -->
 <section id="about" class="section">
   <div class="section__head">
-    <span class="section__num">§ 01</span>
-    <h2 class="section__title">About</h2>
-    <span class="section__rule"></span>
+    <span class="eyebrow">About</span>
+    <h2>Statistical rigor, engineering execution</h2>
   </div>
-
-  <div class="about-grid">
-    <div class="about-copy">
-      <p class="lede">
-        I&rsquo;m a data scientist and researcher finishing an
-        <strong>MS in Information Technology</strong> at Missouri State,
-        on top of a <strong>BS in Statistics</strong>.
+  <div class="about">
+    <div class="about__copy">
+      <p>
+        I hold a <strong>B.S. in Statistics</strong> and an
+        <strong>M.S. in Information Technology</strong> from Missouri State
+        University. That combination shapes how I work: the statistics degree
+        taught me to ask whether a result is real; the IT degree taught me to
+        build the systems that produce it.
       </p>
       <p>
-        My work lives where classical statistics meets modern AI. I&rsquo;ve
-        built an NLP system at CoxHealth that classifies
-        <strong>11M+ patient messages at 98% accuracy</strong>, designed A/B
-        tests at O&rsquo;Reilly tied to <strong>$10M+ in YoY revenue</strong>,
-        and I currently lead research on <strong>causal inference</strong> and
-        Bayesian networks.
+        Right now I'm a <strong>Data Engineering Intern at CoxHealth</strong>,
+        building metadata-driven pipelines for an enterprise data migration,
+        while leading research on <strong>causal inference</strong> in
+        financial and healthcare systems as a Graduate Research Assistant.
+        Previously I shipped an NLP model that routes 11M+ patient messages
+        at 98% accuracy, and ran A/B tests at O'Reilly Auto Parts tied to
+        $10M+ in year-over-year revenue.
       </p>
       <p>
-        I teach 30+ students Python &amp; R, and I&rsquo;ve won the USITC
-        Business Analytics Competition <strong>three consecutive years</strong>.
-        I believe good analysis looks like clean code, and good code looks like
-        a well-specified question.
+        Outside of work I train students in Python and R for national
+        analytics competitions — and I've won the USITC Business Analytics
+        Competition three years in a row.
       </p>
     </div>
-
-    <aside class="about-card">
-      <header class="about-card__head">
-        <span>CURRENTLY</span>
-        <span class="pulse"></span>
-      </header>
-      <ul class="about-card__list">
+    <aside class="about__panel">
+      <h3>Education</h3>
+      <ul class="edu">
         <li>
-          <span class="k">Role</span>
-          <span class="v">Graduate Research Assistant, MSU</span>
+          <strong>M.S. Information Technology</strong>
+          <span>Missouri State University · GPA 3.89</span>
         </li>
         <li>
-          <span class="k">Focus</span>
-          <span class="v">Causal inference · Bayesian networks · Applied ML</span>
+          <strong>B.S. Statistics</strong>
+          <span>Missouri State University · GPA 3.48</span>
         </li>
-        <li>
-          <span class="k">Teaching</span>
-          <span class="v">Python &amp; R · 30+ students</span>
-        </li>
-        <li>
-          <span class="k">Papers</span>
-          <span class="v">5 active (2 under review, 3 in progress)</span>
-        </li>
-        <li>
-          <span class="k">Based in</span>
-          <span class="v">Springfield, MO</span>
-        </li>
-        <li>
-          <span class="k">Open to</span>
-          <span class="v">Full-time data science · analytics · ML / AI roles</span>
-        </li>
+      </ul>
+      <h3>Focus areas</h3>
+      <ul class="chips">
+        <li>Causal inference</li>
+        <li>Bayesian networks</li>
+        <li>NLP</li>
+        <li>A/B testing</li>
+        <li>Data pipelines</li>
+        <li>Time series</li>
       </ul>
     </aside>
   </div>
 </section>
 
-<!-- ===== METRICS ===== -->
-<section class="section section--tight">
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section section--alt">
   <div class="section__head">
-    <span class="section__num">§ 02</span>
-    <h2 class="section__title">By the numbers</h2>
-    <span class="section__rule"></span>
+    <span class="eyebrow">Experience</span>
+    <h2>Where I've worked</h2>
   </div>
-
-  <div class="metrics">
-    <article class="metric">
-      <div class="metric__value" data-count="98" data-suffix="%">0%</div>
-      <div class="metric__label">NLP model accuracy on 11M+ msgs</div>
-    </article>
-    <article class="metric metric--accent">
-      <div class="metric__value">$10M<span class="plus">+</span></div>
-      <div class="metric__label">YoY revenue impact via A/B tests</div>
-    </article>
-    <article class="metric">
-      <div class="metric__value" data-count="11" data-suffix="M+">0</div>
-      <div class="metric__label">Messages classified in production</div>
-    </article>
-    <article class="metric">
-      <div class="metric__value" data-count="3" data-suffix="×">0×</div>
-      <div class="metric__label">USITC Analytics Champion</div>
-    </article>
-    <article class="metric">
-      <div class="metric__value" data-count="5" data-suffix="+">0</div>
-      <div class="metric__label">Research papers authored</div>
-    </article>
-    <article class="metric">
-      <div class="metric__value" data-count="65" data-suffix="%">0%</div>
-      <div class="metric__label">Performance boost via refactor</div>
-    </article>
-  </div>
-</section>
-
-<!-- ===== WORK ===== -->
-<section id="work" class="section">
-  <div class="section__head">
-    <span class="section__num">§ 03</span>
-    <h2 class="section__title">Selected work</h2>
-    <span class="section__rule"></span>
-  </div>
-
-  <div class="projects">
-
-    <!-- Project 1: NLP classifier -->
-    <article class="project">
-      <div class="project__index">P/01</div>
-      <div class="project__body">
-        <div class="project__meta">
-          <span>2024</span><span>·</span><span>NLP in production</span>
-        </div>
-        <h3 class="project__title">Patient Message Classifier</h3>
-        <p class="project__desc">
-          An NLP pipeline deployed at CoxHealth that routes
-          <strong>11M+ patient messages</strong> at <strong>98% accuracy</strong>.
-          I refactored the inference path for a 65% speedup and streamlined
-          appointment workflows.
-        </p>
-        <ul class="project__tags">
-          <li>NLP</li><li>Transformers</li><li>Healthcare</li><li>MLOps</li>
+  <ol class="timeline">
+    <li class="job">
+      <div class="job__when">Jun 2026 — Present</div>
+      <div class="job__body">
+        <h3>Data Engineering Intern</h3>
+        <p class="job__org">CoxHealth</p>
+        <ul>
+          <li>Engineering metadata-driven ETL/ELT pipelines supporting an enterprise Cerner-to-Epic data migration across Clarity and Caboodle source systems.</li>
+          <li>Developing dbt models that transform raw extracts into tested staging and dimensional layers using star-schema modeling.</li>
         </ul>
-        <span class="project__link project__link--static">
-          Internal · CoxHealth
-        </span>
       </div>
-      <div class="project__viz project__viz--conf" aria-hidden="true">
-        <svg viewBox="0 0 320 160">
-          <g class="heat">
-            <rect x="20"  y="20" width="30" height="30" opacity=".95"/>
-            <rect x="55"  y="20" width="30" height="30" opacity=".15"/>
-            <rect x="90"  y="20" width="30" height="30" opacity=".28"/>
-            <rect x="125" y="20" width="30" height="30" opacity=".12"/>
-            <rect x="160" y="20" width="30" height="30" opacity=".22"/>
-            <rect x="195" y="20" width="30" height="30" opacity=".10"/>
-            <rect x="230" y="20" width="30" height="30" opacity=".30"/>
-            <rect x="265" y="20" width="30" height="30" opacity=".18"/>
-
-            <rect x="20"  y="55" width="30" height="30" opacity=".18"/>
-            <rect x="55"  y="55" width="30" height="30" opacity=".92"/>
-            <rect x="90"  y="55" width="30" height="30" opacity=".20"/>
-            <rect x="125" y="55" width="30" height="30" opacity=".28"/>
-            <rect x="160" y="55" width="30" height="30" opacity=".14"/>
-            <rect x="195" y="55" width="30" height="30" opacity=".30"/>
-            <rect x="230" y="55" width="30" height="30" opacity=".12"/>
-            <rect x="265" y="55" width="30" height="30" opacity=".22"/>
-
-            <rect x="20"  y="90" width="30" height="30" opacity=".22"/>
-            <rect x="55"  y="90" width="30" height="30" opacity=".18"/>
-            <rect x="90"  y="90" width="30" height="30" opacity=".97"/>
-            <rect x="125" y="90" width="30" height="30" opacity=".24"/>
-            <rect x="160" y="90" width="30" height="30" opacity=".30"/>
-            <rect x="195" y="90" width="30" height="30" opacity=".12"/>
-            <rect x="230" y="90" width="30" height="30" opacity=".22"/>
-            <rect x="265" y="90" width="30" height="30" opacity=".16"/>
-
-            <rect x="20"  y="125" width="30" height="30" opacity=".12"/>
-            <rect x="55"  y="125" width="30" height="30" opacity=".30"/>
-            <rect x="90"  y="125" width="30" height="30" opacity=".22"/>
-            <rect x="125" y="125" width="30" height="30" opacity=".94"/>
-            <rect x="160" y="125" width="30" height="30" opacity=".18"/>
-            <rect x="195" y="125" width="30" height="30" opacity=".26"/>
-            <rect x="230" y="125" width="30" height="30" opacity=".14"/>
-            <rect x="265" y="125" width="30" height="30" opacity=".28"/>
-          </g>
-        </svg>
-        <span class="viz-label">confusion matrix · class-wise accuracy</span>
-      </div>
-    </article>
-
-    <!-- Project 2: A/B test engine at O'Reilly -->
-    <article class="project project--reverse">
-      <div class="project__index">P/02</div>
-      <div class="project__body">
-        <div class="project__meta">
-          <span>2023 – 2024</span><span>·</span><span>Experimentation</span>
-        </div>
-        <h3 class="project__title">Merchandise Analytics &amp; A/B Testing</h3>
-        <p class="project__desc">
-          Over a year at O&rsquo;Reilly Auto Parts: 100+ analytics projects in
-          SQL, DOMO and MicroStrategy, plus experimentation work that
-          contributed to <strong>$10M+ in YoY revenue</strong> and
-          <strong>8% lower operational expenses</strong>.
-        </p>
-        <ul class="project__tags">
-          <li>SQL</li><li>A/B Testing</li><li>DOMO</li><li>Retail Analytics</li>
+    </li>
+    <li class="job">
+      <div class="job__when">Aug 2024 — Present</div>
+      <div class="job__body">
+        <h3>Graduate Research Assistant</h3>
+        <p class="job__org">Missouri State University</p>
+        <ul>
+          <li>Leading research on causal inference in multi-factor asset pricing and on the financial performance of healthcare facilities.</li>
+          <li>Training 30 students in Python and R for national analytics competitions.</li>
+          <li>Supporting four Quantitative Business Analysis courses, with many students improving by a full letter grade.</li>
         </ul>
-        <span class="project__link project__link--static">
-          Internal · O&rsquo;Reilly Auto Parts
-        </span>
       </div>
-      <div class="project__viz project__viz--ab" aria-hidden="true">
-        <svg viewBox="0 0 320 160" preserveAspectRatio="none">
-          <g class="ab-axis">
-            <line x1="20" y1="140" x2="300" y2="140"/>
-            <line x1="20" y1="20"  x2="20"  y2="140"/>
-          </g>
-          <!-- control distribution -->
-          <path class="dist dist--a" d="M 30 140 Q 80 60, 130 140 Z"/>
-          <!-- treatment distribution -->
-          <path class="dist dist--b" d="M 150 140 Q 210 30, 270 140 Z"/>
-          <line class="mean" x1="80"  y1="140" x2="80"  y2="95"/>
-          <line class="mean" x1="210" y1="140" x2="210" y2="65"/>
-        </svg>
-        <span class="viz-label">A · control &nbsp; · &nbsp; B · treatment (p &lt; 0.01)</span>
-      </div>
-    </article>
-
-    <!-- Project 3: Causal inference / research -->
-    <article class="project">
-      <div class="project__index">P/03</div>
-      <div class="project__body">
-        <div class="project__meta">
-          <span>2025</span><span>·</span><span>Research</span>
-        </div>
-        <h3 class="project__title">Causal Inference in Asset Pricing</h3>
-        <p class="project__desc">
-          Ongoing research using Bayesian networks and Granger-causality tests
-          to untangle directional relationships between macro factors and
-          multi-asset returns. Two papers under review, one in progress.
-        </p>
-        <ul class="project__tags">
-          <li>Bayesian Networks</li><li>Causal Inference</li><li>Time Series</li><li>R</li>
+    </li>
+    <li class="job">
+      <div class="job__when">Jun 2025 — Aug 2025</div>
+      <div class="job__body">
+        <h3>Enterprise Data Analytics Intern</h3>
+        <p class="job__org">CoxHealth</p>
+        <ul>
+          <li>Built an NLP classification model with 98% accuracy routing 11M+ patient messages to the right departments.</li>
+          <li>Optimized code performance by 65% and contributed to centralized scheduling improvements.</li>
         </ul>
-        <a class="project__link" href="#research">
-          Read the papers <span>↓</span>
-        </a>
       </div>
-      <div class="project__viz project__viz--dag" aria-hidden="true">
-        <svg viewBox="0 0 320 160">
-          <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
-                    markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M 0 0 L 10 5 L 0 10 z" />
-            </marker>
-          </defs>
-          <g class="dag-edges">
-            <line x1="60"  y1="40"  x2="150" y2="80"  marker-end="url(#arrow)"/>
-            <line x1="60"  y1="120" x2="150" y2="80"  marker-end="url(#arrow)"/>
-            <line x1="150" y1="80"  x2="245" y2="40"  marker-end="url(#arrow)"/>
-            <line x1="150" y1="80"  x2="245" y2="120" marker-end="url(#arrow)"/>
-            <line x1="60"  y1="40"  x2="245" y2="40"  marker-end="url(#arrow)"/>
-          </g>
-          <g class="dag-nodes">
-            <circle cx="60"  cy="40"  r="14"/><text x="60"  y="44"  >X₁</text>
-            <circle cx="60"  cy="120" r="14"/><text x="60"  y="124" >X₂</text>
-            <circle cx="150" cy="80"  r="16" class="hub"/><text x="150" y="84" >Z</text>
-            <circle cx="245" cy="40"  r="14"/><text x="245" y="44"  >Y₁</text>
-            <circle cx="245" cy="120" r="14"/><text x="245" y="124" >Y₂</text>
-          </g>
-        </svg>
-        <span class="viz-label">directed acyclic graph · causal structure</span>
-      </div>
-    </article>
-
-    <!-- Project 4: open source -->
-    <article class="project project--reverse">
-      <div class="project__index">P/04</div>
-      <div class="project__body">
-        <div class="project__meta">
-          <span>Ongoing</span><span>·</span><span>Open source</span>
-        </div>
-        <h3 class="project__title">Data-Science-Projects &nbsp;·&nbsp; Quant-Projects</h3>
-        <p class="project__desc">
-          A public lab on GitHub: content-based recommender systems
-          (Netflix &amp; Spotify), unsupervised clustering on Palmer penguins
-          with PCA, competition EDA, and applied quantitative notebooks.
-        </p>
-        <ul class="project__tags">
-          <li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>Jupyter</li>
+    </li>
+    <li class="job">
+      <div class="job__when">Jan 2023 — Jan 2024</div>
+      <div class="job__body">
+        <h3>Merchandise Data Analyst Intern</h3>
+        <p class="job__org">O'Reilly Auto Parts</p>
+        <ul>
+          <li>Completed 100+ merchandise analytics projects across SQL, Excel, DOMO, APT Test&amp;Learn, and MicroStrategy.</li>
+          <li>Supported 7+ A/B tests — including product-placement experiments driving 3–5% category growth and $10M+ in YoY revenue.</li>
+          <li>Cut operational expenses by 8%, including eliminating printed flyers after showing no lift over digital.</li>
         </ul>
-        <a class="project__link" href="https://github.com/Rshukla17" target="_blank" rel="noopener">
-          Browse repos <span>↗</span>
-        </a>
       </div>
-      <div class="project__viz project__viz--cluster" aria-hidden="true">
-        <svg viewBox="0 0 320 160">
-          <g class="cluster cluster--a">
-            <circle cx="60"  cy="50"  r="5"/>
-            <circle cx="75"  cy="35"  r="4"/>
-            <circle cx="45"  cy="65"  r="4"/>
-            <circle cx="85"  cy="55"  r="5"/>
-            <circle cx="55"  cy="80"  r="3"/>
-            <circle cx="70"  cy="70"  r="4"/>
-            <circle cx="90"  cy="40"  r="3"/>
-          </g>
-          <g class="cluster cluster--b">
-            <circle cx="170" cy="110" r="5"/>
-            <circle cx="185" cy="95"  r="4"/>
-            <circle cx="155" cy="125" r="4"/>
-            <circle cx="195" cy="115" r="5"/>
-            <circle cx="165" cy="140" r="3"/>
-            <circle cx="180" cy="130" r="4"/>
-            <circle cx="200" cy="100" r="3"/>
-          </g>
-          <g class="cluster cluster--c">
-            <circle cx="250" cy="45"  r="5"/>
-            <circle cx="265" cy="30"  r="4"/>
-            <circle cx="235" cy="60"  r="4"/>
-            <circle cx="275" cy="50"  r="5"/>
-            <circle cx="245" cy="75"  r="3"/>
-            <circle cx="260" cy="65"  r="4"/>
-            <circle cx="280" cy="35"  r="3"/>
-          </g>
-        </svg>
-        <span class="viz-label">k-means clusters · PCA projection</span>
-      </div>
-    </article>
-
-  </div>
+    </li>
+  </ol>
 </section>
 
 <!-- ===== RESEARCH ===== -->
 <section id="research" class="section">
   <div class="section__head">
-    <span class="section__num">§ 04</span>
-    <h2 class="section__title">Research &amp; publications</h2>
-    <span class="section__rule"></span>
+    <span class="eyebrow">Research</span>
+    <h2>Papers &amp; publications</h2>
   </div>
-
   <ol class="papers">
     <li class="paper">
-      <div class="paper__year">2025</div>
-      <div class="paper__body">
-        <h3 class="paper__title">Financial Performance of Nursing Homes</h3>
-        <p class="paper__authors">R. Shukla, R. Mainali</p>
-        <p class="paper__venue"><span class="badge badge--review">Under review</span> Journal of Economic Modeling</p>
-      </div>
+      <span class="paper__status paper__status--review">Under review</span>
+      <h3>Regime-Dependent Causal Architecture in Financial-Macroeconomic Systems: A Multi-Algorithm Consensus Approach</h3>
+      <p>R. Shukla, R. Mainali</p>
     </li>
     <li class="paper">
-      <div class="paper__year">2025</div>
-      <div class="paper__body">
-        <h3 class="paper__title">Clinical Effectiveness of Inclisiran</h3>
-        <p class="paper__authors">G. Neupane, R. Shukla, et al.</p>
-        <p class="paper__venue"><span class="badge badge--submitted">Submitted</span> American College of Cardiology</p>
-      </div>
+      <span class="paper__status paper__status--review">Under review · Journal of Economic Modeling</span>
+      <h3>Analyzing Financial and Overall Performance of Nursing Homes</h3>
+      <p>R. Shukla, R. Mainali</p>
     </li>
     <li class="paper">
-      <div class="paper__year">2025</div>
-      <div class="paper__body">
-        <h3 class="paper__title">Granger Causality Across Financial Indices</h3>
-        <p class="paper__authors">R. Shukla, P. Prakash</p>
-        <p class="paper__venue"><span class="badge badge--review">Under review</span></p>
-      </div>
+      <span class="paper__status paper__status--review">Under review</span>
+      <h3>Examining Granger Causality and the Efficiency of Random Walks in Financial Indices</h3>
+      <p>R. Shukla, P. Prakash</p>
     </li>
     <li class="paper">
-      <div class="paper__year">WIP</div>
-      <div class="paper__body">
-        <h3 class="paper__title">Causal Inference in Multi-Asset Pricing with Bayesian Networks</h3>
-        <p class="paper__authors">R. Shukla, R. Mainali</p>
-        <p class="paper__venue"><span class="badge badge--wip">Work in progress</span> Bayesian Networks · Causal ML</p>
-      </div>
+      <span class="paper__status paper__status--review">Submitted · American College of Cardiology</span>
+      <h3>Real-World Effectiveness and Safety of Inclisiran in Clinical Practice</h3>
+      <p>G. Neupane, R. Shukla, G. Oghlakian, et al.</p>
     </li>
     <li class="paper">
-      <div class="paper__year">WIP</div>
-      <div class="paper__body">
-        <h3 class="paper__title">Mortgage Risk Assessment with Bayesian Neural Networks</h3>
-        <p class="paper__authors">C. Kneeshaw, R. Shukla</p>
-        <p class="paper__venue"><span class="badge badge--wip">Work in progress</span> Applied ML</p>
-      </div>
+      <span class="paper__status paper__status--review">Under review</span>
+      <h3>Automated Cheating Detection in Learning Management Systems: A Review</h3>
+      <p>R. Thambusamy, R. Mainali, R. Shukla, T.H. Nguyen</p>
+    </li>
+    <li class="paper">
+      <span class="paper__status paper__status--wip">Work in progress</span>
+      <h3>Improving Mortgage Risk Assessment: Causal Insights from Bayesian Neural Networks and Machine Learning</h3>
+      <p>C. Kneeshaw, R. Shukla</p>
     </li>
   </ol>
 </section>
 
-<!-- ===== EXPERIENCE ===== -->
-<section id="experience" class="section">
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section section--alt">
   <div class="section__head">
-    <span class="section__num">§ 05</span>
-    <h2 class="section__title">Experience</h2>
-    <span class="section__rule"></span>
+    <span class="eyebrow">Projects</span>
+    <h2>Live apps &amp; open work</h2>
   </div>
 
-  <ol class="timeline">
-    <li class="tl">
-      <div class="tl__when">
-        <span class="tl__dot"></span>
-        <span class="tl__dates">Aug 2024 — Present</span>
-      </div>
-      <div class="tl__body">
-        <h3 class="tl__role">Graduate Research Assistant</h3>
-        <p class="tl__org">Missouri State University</p>
-        <ul class="tl__points">
-          <li>Leading research on causal inference and Bayesian networks for multi-factor asset pricing.</li>
-          <li>Training 30+ students in Python &amp; R for national analytics competitions.</li>
-          <li>Lifting student performance by full letter grades through targeted mentorship.</li>
-        </ul>
-      </div>
-    </li>
-    <li class="tl">
-      <div class="tl__when">
-        <span class="tl__dot"></span>
-        <span class="tl__dates">Jun 2024 — Aug 2024</span>
-      </div>
-      <div class="tl__body">
-        <h3 class="tl__role">Enterprise Data Analytics Intern</h3>
-        <p class="tl__org">CoxHealth</p>
-        <ul class="tl__points">
-          <li>Built an NLP model at 98% accuracy classifying 11M+ patient messages.</li>
-          <li>Refactored inference pipeline for a 65% performance gain.</li>
-          <li>Streamlined patient appointment workflows, reducing routing bottlenecks.</li>
-        </ul>
-      </div>
-    </li>
-    <li class="tl">
-      <div class="tl__when">
-        <span class="tl__dot"></span>
-        <span class="tl__dates">Jan 2023 — Jan 2024</span>
-      </div>
-      <div class="tl__body">
-        <h3 class="tl__role">Merchandise Data Analyst Intern</h3>
-        <p class="tl__org">O&rsquo;Reilly Auto Parts</p>
-        <ul class="tl__points">
-          <li>Shipped 100+ analytics projects across SQL, Excel, DOMO and MicroStrategy.</li>
-          <li>Ran A/B tests contributing to $10M+ in YoY revenue lift.</li>
-          <li>Cut operational expenses by 8% via strategic category analysis.</li>
-        </ul>
-      </div>
-    </li>
-  </ol>
+  <div class="apps">
+    <a class="app" href="https://icttrading.streamlit.app/" target="_blank" rel="noopener">
+      <span class="app__badge">● Live</span>
+      <h3>ICT Trading</h3>
+      <p>Market-analysis app built on ICT (Inner Circle Trader) concepts — price action, liquidity, and market structure, rendered as an interactive Streamlit dashboard.</p>
+      <span class="app__go">Open the app →</span>
+    </a>
+    <a class="app" href="https://brahminterminal.streamlit.app/" target="_blank" rel="noopener">
+      <span class="app__badge">● Live</span>
+      <h3>Brahmin Terminal</h3>
+      <p>A terminal-style dashboard for market data and financial research — quotes, charts, and analytics in one screen.</p>
+      <span class="app__go">Open the app →</span>
+    </a>
+  </div>
+
+  <div class="projects">
+    <a class="proj" href="https://github.com/Rshukla17/Quant-Projects" target="_blank" rel="noopener">
+      <span class="proj__lang">Jupyter Notebook</span>
+      <h3>Quant-Projects</h3>
+      <p>Quantitative finance notebooks — market analysis, backtesting ideas, and statistical experiments on price data.</p>
+      <span class="proj__go">View on GitHub →</span>
+    </a>
+    <a class="proj" href="https://github.com/Rshukla17/Data-Science-Projects" target="_blank" rel="noopener">
+      <span class="proj__lang">Jupyter Notebook</span>
+      <h3>Data-Science-Projects</h3>
+      <p>Machine learning and exploratory analysis on real-world datasets, end to end.</p>
+      <span class="proj__go">View on GitHub →</span>
+    </a>
+    <a class="proj" href="https://github.com/Rshukla17/Hypothesis-Testing" target="_blank" rel="noopener">
+      <span class="proj__lang">Jupyter Notebook</span>
+      <h3>Hypothesis-Testing</h3>
+      <p>Applied statistics notebooks — worked examples of inference and hypothesis testing done properly.</p>
+      <span class="proj__go">View on GitHub →</span>
+    </a>
+    <a class="proj" href="https://github.com/Rshukla17/MarketResearch" target="_blank" rel="noopener">
+      <span class="proj__lang">Python</span>
+      <h3>MarketResearch</h3>
+      <p>Python tooling for market research and data collection.</p>
+      <span class="proj__go">View on GitHub →</span>
+    </a>
+  </div>
+  <p class="projects__all">
+    <a href="https://github.com/Rshukla17?tab=repositories" target="_blank" rel="noopener">All repositories on GitHub →</a>
+  </p>
 </section>
 
 <!-- ===== SKILLS ===== -->
-<section class="section section--tight">
+<section class="section">
   <div class="section__head">
-    <span class="section__num">§ 06</span>
-    <h2 class="section__title">Technical stack</h2>
-    <span class="section__rule"></span>
+    <span class="eyebrow">Skills</span>
+    <h2>Technical stack</h2>
   </div>
-
   <div class="stack">
     <div class="stack__group">
-      <h4>Languages</h4>
-      <ul><li>Python</li><li>R</li><li>SQL</li><li>PostgreSQL</li></ul>
+      <h3>Languages</h3>
+      <ul class="chips"><li>Python</li><li>R</li><li>SQL (Postgres)</li></ul>
     </div>
     <div class="stack__group">
-      <h4>ML &amp; AI</h4>
-      <ul><li>Scikit-learn</li><li>TensorFlow</li><li>NLP</li><li>Deep Learning</li><li>Bayesian Networks</li></ul>
+      <h3>ML &amp; statistics</h3>
+      <ul class="chips"><li>Classification</li><li>Regression</li><li>Forecasting</li><li>Clustering</li><li>NLP</li><li>A/B testing</li><li>bnlearn</li><li>pgmpy</li></ul>
     </div>
     <div class="stack__group">
-      <h4>Statistics</h4>
-      <ul><li>Causal Inference</li><li>Time Series</li><li>A/B Testing</li><li>Stochastic Processes</li></ul>
+      <h3>Data engineering</h3>
+      <ul class="chips"><li>PySpark</li><li>Microsoft Fabric</li><li>REST APIs</li><li>dbt</li><li>Airflow</li></ul>
     </div>
     <div class="stack__group">
-      <h4>Data &amp; BI</h4>
-      <ul><li>PySpark</li><li>Tableau</li><li>Power BI</li><li>DOMO</li><li>MicroStrategy</li></ul>
+      <h3>Visualization &amp; BI</h3>
+      <ul class="chips"><li>Power BI</li><li>Tableau</li><li>DOMO</li><li>Matplotlib</li><li>Seaborn</li><li>ggplot2</li></ul>
     </div>
   </div>
 </section>
 
 <!-- ===== RECOGNITION ===== -->
-<section class="section">
+<section class="section section--alt">
   <div class="section__head">
-    <span class="section__num">§ 07</span>
-    <h2 class="section__title">Recognition &amp; leadership</h2>
-    <span class="section__rule"></span>
+    <span class="eyebrow">Recognition &amp; leadership</span>
+    <h2>Awards, competitions &amp; leadership</h2>
   </div>
-
   <div class="awards">
     <article class="award">
-      <div class="award__ico">✦</div>
-      <h4>International Leadership Award</h4>
-      <p>Selected as 1 of 10 for exceptional leadership and global community impact.</p>
+      <h3>3× USITC Analytics Champion</h3>
+      <p>Won the national Business Analytics Competition three consecutive years among 20 universities.</p>
     </article>
     <article class="award">
-      <div class="award__ico">◆</div>
-      <h4>3× USITC Analytics Champion</h4>
-      <p>Won the Business Analytics Competition at USITC three consecutive years among 20 universities.</p>
+      <h3>International Leadership Award</h3>
+      <p>Selected as 1 of 10 for exceptional leadership and contributions to the global community.</p>
     </article>
     <article class="award">
-      <div class="award__ico">▲</div>
-      <h4>Wharton Case Analytics</h4>
-      <p>Competed in the Wharton Case Analytics Competition analyzing user engagement patterns.</p>
+      <h3>Wharton Case Analytics Competition</h3>
+      <p>Presented an analysis of user engagement, learning retention, and course-completion drivers.</p>
     </article>
     <article class="award">
-      <div class="award__ico">●</div>
-      <h4>President, SASA</h4>
-      <p>Leading a 450+ member South Asian Student Association with 12–15 annual events.</p>
+      <h3>President, South Asian Student Association</h3>
+      <p>Led a 450+ member organization running 12–15 cultural and networking events a year.</p>
     </article>
     <article class="award">
-      <div class="award__ico">✺</div>
-      <h4>Finance Chair, International Students</h4>
-      <p>Overseeing the budget for students from 98 different countries.</p>
+      <h3>Finance Chair, Association of International Students</h3>
+      <p>Managed budgeting and event funding for students from 98 countries.</p>
     </article>
     <article class="award">
-      <div class="award__ico">◇</div>
-      <h4>Treasurer, Astronomy Club</h4>
-      <p>Managing finances and ensuring the sustainability of club activities.</p>
+      <h3>Treasurer, Ozarks Amateur Astronomy Club</h3>
+      <p>Kept the club financially stable — dues, expenses, and activity funding.</p>
     </article>
   </div>
 </section>
@@ -662,42 +371,28 @@ pd.DataFrame(profile).T</pre>
 <!-- ===== CONTACT ===== -->
 <section id="contact" class="contact">
   <div class="contact__inner">
-    <div class="contact__meta">
-      <span class="section__num">§ 08</span>
-      <span>Contact</span>
-    </div>
-
-    <h2 class="contact__title">
-      Let&rsquo;s build something<br/>
-      <em>intelligent</em> together.
-    </h2>
-
-    <p class="contact__lede">
-      I&rsquo;m actively looking for <strong>full-time data science, analytics, and AI roles</strong>
-      &mdash; and always open to research collaborations or hard problems you
-      can&rsquo;t crack. Let&rsquo;s talk.
+    <span class="eyebrow eyebrow--light">Contact</span>
+    <h2>Let's work <em>together.</em></h2>
+    <p>
+      I'm open to full-time data science, analytics, and data engineering
+      roles — and to research collaborations.
     </p>
-
     <div class="contact__grid">
       <a class="contact__card" href="mailto:Rajan2shukla@gmail.com">
-        <span class="contact__k">EMAIL</span>
+        <span class="contact__k">Email</span>
         <span class="contact__v">Rajan2shukla@gmail.com</span>
-        <span class="contact__arr">↗</span>
       </a>
       <a class="contact__card" href="https://www.linkedin.com/in/rshukla17/" target="_blank" rel="noopener">
-        <span class="contact__k">LINKEDIN</span>
-        <span class="contact__v">in/rajan-shukla</span>
-        <span class="contact__arr">↗</span>
+        <span class="contact__k">LinkedIn</span>
+        <span class="contact__v">in/rshukla17</span>
       </a>
       <a class="contact__card" href="https://github.com/Rshukla17" target="_blank" rel="noopener">
-        <span class="contact__k">GITHUB</span>
+        <span class="contact__k">GitHub</span>
         <span class="contact__v">@Rshukla17</span>
-        <span class="contact__arr">↗</span>
       </a>
       <a class="contact__card" href="tel:+14176332577">
-        <span class="contact__k">PHONE</span>
+        <span class="contact__k">Phone</span>
         <span class="contact__v">+1 (417) 633-2577</span>
-        <span class="contact__arr">↗</span>
       </a>
     </div>
   </div>
@@ -706,12 +401,8 @@ pd.DataFrame(profile).T</pre>
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
   <div class="footer__inner">
-    <div>© <span id="year">2026</span> Rajan Shukla. Built with patience, coffee, and a lot of <code>git commit -m "fix"</code>.</div>
-    <div class="footer__meta">
-      <span>Designed &amp; coded from Springfield, MO</span>
-      <span>·</span>
-      <a href="#top">Back to top ↑</a>
-    </div>
+    <span>© <span id="year">2026</span> Rajan Shukla</span>
+    <a href="#top">Back to top ↑</a>
   </div>
 </footer>
 
